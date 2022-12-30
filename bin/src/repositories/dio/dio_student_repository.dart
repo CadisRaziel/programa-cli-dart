@@ -128,11 +128,9 @@ class DioStudentRepository {
     //   throw Exception();
     // }
 
-
     //*DIO
     try {
-      await Dio().delete(
-        "http://localhost:8080/students/$id");
+      await Dio().delete("http://localhost:8080/students/$id");
     } on Exception catch (e) {
       print(e);
       throw Exception();
